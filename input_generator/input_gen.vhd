@@ -33,9 +33,10 @@ architecture input_gen_arch of input_gen is
       return rom_values;
    end function;
 
-   constant path_random: string := "/home/gianfranco/Documents/CESE/Circuitos Logicos Programables/Repositorio/CESE_Circuitos_Logicos_Programables/signals/input_random.data";
-   constant path_tone: string := "/home/gianfranco/Documents/CESE/Circuitos Logicos Programables/Repositorio/CESE_Circuitos_Logicos_Programables/signals/input_tone.data";
-   constant path_square: string := "/home/gianfranco/Documents/CESE/Circuitos Logicos Programables/Repositorio/CESE_Circuitos_Logicos_Programables/signals/input_square.data";
+   constant path_root: string := "/home/gianfranco/Documents/CESE/Circuitos Logicos Programables/Repositorio/CESE_Circuitos_Logicos_Programables/signals/";
+   constant path_random: string := path_root & "input_random.data";
+   constant path_tone: string := path_root & "input_tone.data";
+   constant path_square: string := path_root & "input_square.data";
 
    constant values_random: rom :=  init_rom_from_file(path_random);
    constant values_tone: rom :=  init_rom_from_file(path_tone);

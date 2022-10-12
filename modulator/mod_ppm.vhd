@@ -13,7 +13,7 @@ entity mod_ppm is
       input: in std_logic_vector(N - 1 downto 0);
       output: out std_logic
    );
-end mod_ppm;
+end;
 
 
 architecture mod_ppm_arch of mod_ppm is
@@ -62,4 +62,4 @@ begin
 
    output <= output_reg;
 
-end mod_ppm_arch;
+end;
